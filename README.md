@@ -1,3 +1,16 @@
+# Full guide to switch from Windows to Ubuntu in a Day
+
+```table-of-contents
+title: 
+style: nestedList # TOC style (nestedList|nestedOrderedList|inlineFirstLevel)
+minLevel: 0 # Include headings from the specified level
+maxLevel: 0 # Include headings up to the specified level
+include: 
+exclude: 
+includeLinks: true # Make headings clickable
+hideWhenEmpty: false # Hide TOC if no headings are found
+debugInConsole: false # Print debug info in Obsidian console
+```
 ## Info
 - Install ubuntu 24.04 normally, nothing special just normal, then reboot into it.
 
@@ -59,40 +72,40 @@
 6. If your Taskbar still looks small, **right click** an empty on the taskbarthen select **Enter Edit Mode**. 
 7. Bump up the **Panel Height Slider** until it looks good, then press the ``ESC`` key twice to leave the edit mode.
 
-## 8. Setting up Flathub
+## 4. Setting up Flathub
 *This section will teach you how to use flathub to et more applications*
-### 8.1 What is Flathub?
+### 4.1 What is Flathub?
 - **Flathub** is a **host** of **Application** that are *extremly simple to install and setup*. Once it is setup, you will be able to *access* more **software** that the ``APT`` Package Manager simply **doesnt have the rights to access**.
 
-### 8.2 How Flathub Works
+### 4.2 How Flathub Works
 - **Flathub** and **Flatpak** are to different things, **Flatpak** is the **engine**, and lets say **Flathub** is the place where all the **apps are stored**, or a **repository**. 
 
-### 8.3 Installing Flatpak (The engine)
+### 4.3 Installing Flatpak (The engine)
 1. Since you are in the **KDE Plasma** desktop, you can open your terminal with the **default keybinding**, ``ctrl + alt + t`` . 
 2. In the terminal you can simply install the flatpak engine with the following command ``sudo apt install flatpak``.
 3. Type ``y`` and click ``enter``
 
-### 8.4 Installing Flathub (The repo)
+### 4.4 Installing Flathub (The repo)
 1. *Flatpak* is **nothing** without a repository, which lets **flatpak** know where the apps are **stored**.  
 2. To install the **Flathub** repository, you can use the following command, ``flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo``
 
-#### 8.4.0 Breaking Down the Command
+#### 4.4.1 Breaking Down the Command
 ``flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo``
 - ``flatpak``: **calling** the flatpak engine.
 - ``remote-add``: telling **flatpak** to **add a repository**
 - ``flathub``: the **name** of the repository
 - ``url``: the **url** of the repo
 
-## 9. Installing Google Chrome
+## 5. Installing Google Chrome
 *This section will help you **install Google Chrome** and help you understand **Open Source Software** and **Closed Source Software**.
 
-### 9.1 Open Source vs. Closed Source
+### 5.1 Open Source vs. Closed Source
 - There are two types of mainstream software. This cna include **Open Source** and **Closed Source**. 
 - **Open Source Software** is when the developer make the software free and availble to the public, meaning *anyone* can **access and view** the code, making it the **Safest option**.
 - **Closed Source or Proprietary Software** is a privatly owned software where you cant view the code. and cannot be **viewed** or **optimized** by the community
 - The ``APT`` Package Manager only lets you download **Open Source Software**, Meaning you cant install chrome.
 
-### 9.2 Installing Chrome
+### 5.2 Installing Chrome
 1. The best way to get **closed source** software is through **Flathub**: Open your **browser** and go to ``flathub.org``
 2.  Once you are there, **search** for ``Google Chrome``
 3. Select the one by **google**, and **DONT click on the install button**
@@ -103,37 +116,37 @@
 8. Click ``enter`` when it asks you to install it.
 9. Click ``enter`` again to **accept** the changes to the system.
 
-## 10 Keeping Your System Updated
+## 6 Keeping Your System Updated
 *This section will help you keep your system updated and secured*
 
-### 10.1 Updating Open Source Applications
+### 6.1 Updating Open Source Applications
 - Updating your **opensource applications** is done via the ``APT`` Package Manager. This only require two commands. 
 - The first command is to load the package lists, aka where to get each package from, and is the following, ``sudo apt update``
 - The second command is to actually **install** the packages it found that **require updating**, ``sudo apt upgrade``.  
 
-### 10.2 Updating Closed Source Applications
+### 6.2 Updating Closed Source Applications
 - Updating closed source application is **more important**, as they contain security fixes and patches that are **required** to stay safe. 
 - To do this, it only requires one command, ``flatpak update``
 
-### 10.3 Updating Frequency
+### 6.3 Updating Frequency
 - Both types of package updates should be updated **within short time periods**, this could be once a week, and at **least once a month**, it should become a habit so you can **stay safe**.
 
-## 11. Microsoft Applications
+## 7. Microsoft Applications
 *This section will explain compatibilty with the Microsoft Application Suite*
 
-### 11.1 How it Works
+### 7.1 How it Works
 - **Some** microsoft apps such as ``Microsoft Edge`` and ``Microsoft Teams`` can be installed through **flathub** and **work great!**
 - **Other apps** such as the **Microsoft Office Suite** need *extra tuning* to work, but can still be done.
 - To do this, we can use a tool called WinApps.
 
-### 11.2 What is WinApps?
+### 7.2 What is WinApps?
 - WinApps is a community built tool that lets you **create a windows computer, inside of your existing computer**, then mirror the apps back to your desktop, **making them feel like native**.
 
 #### Everything after this is **optional**, This can take up to **1 Hour** depending on your hardware, and you **Cannot** stop in between
 
 #### Most of the work takes only 15 minutes, but you will need to keep the computer on for the rest of the time for windows setup.
 
-## 12. WinApps Setup
+## 8. WinApps Setup
 *This section is about installing and setting up WinApps on Ubuntu*
 
 #### Settings up WinApps
