@@ -1,49 +1,48 @@
 # *Full guide* to switch from **Windows** to **Ubuntu** in a Day
 
 ## Table of Contents
-- [[#Info|Info]]
-- [[#1. Package Manager|1. Package Manager]]
-- [[#2. Desktop Environments|2. Desktop Environments]]
-- [[#3. Kde Plasma|3. Kde Plasma]]
-	- [[#3. Kde Plasma#3.1 Installation|3.1 Installation]]
-	- [[#3. Kde Plasma#3.2 Display Managers|3.2 Display Managers]]
-	- [[#3. Kde Plasma#3.3 Choosing the Display Manager|3.3 Choosing the Display Manager]]
-	- [[#3. Kde Plasma#3.4 Entering KDE Plasma|3.4 Entering KDE Plasma]]
-	- [[#3. Kde Plasma#3.5 KDE Plasma (High DPI Issue)|3.5 KDE Plasma (High DPI Issue)]]
-		- [[#3.5 KDE Plasma (High DPI Issue)#3.5.0 High DPI Issue|3.5.0 High DPI Issue]]
-- [[#4. Setting up Flathub|4. Setting up Flathub]]
-	- [[#4. Setting up Flathub#4.1 What is Flathub?|4.1 What is Flathub?]]
-	- [[#4. Setting up Flathub#4.2 How Flathub Works|4.2 How Flathub Works]]
-	- [[#4. Setting up Flathub#4.3 Installing Flatpak (The engine)|4.3 Installing Flatpak (The engine)]]
-	- [[#4. Setting up Flathub#4.4 Installing Flathub (The repo)|4.4 Installing Flathub (The repo)]]
-		- [[#4.4 Installing Flathub (The repo)#4.4.1 Breaking Down the Command|4.4.1 Breaking Down the Command]]
-- [[#5. Installing Google Chrome|5. Installing Google Chrome]]
-	- [[#5. Installing Google Chrome#5.1 Open Source vs. Closed Source|5.1 Open Source vs. Closed Source]]
-	- [[#5. Installing Google Chrome#5.2 Installing Chrome|5.2 Installing Chrome]]
-- [[#6 Keeping Your System Updated|6 Keeping Your System Updated]]
-	- [[#6 Keeping Your System Updated#6.1 Updating Open Source Applications|6.1 Updating Open Source Applications]]
-	- [[#6 Keeping Your System Updated#6.2 Updating Closed Source Applications|6.2 Updating Closed Source Applications]]
-	- [[#6 Keeping Your System Updated#6.3 Updating Frequency|6.3 Updating Frequency]]
-- [[#7. Microsoft Applications|7. Microsoft Applications]]
-	- [[#7. Microsoft Applications#7.1 How it Works|7.1 How it Works]]
-	- [[#7. Microsoft Applications#7.2 What is WinApps?|7.2 What is WinApps?]]
-		- [[#7.2 What is WinApps?#Everything after this is **optional**, This can take up to **1 Hour** depending on your hardware, and you **Cannot** stop in between|Everything after this is **optional**, This can take up to **1 Hour** depending on your hardware, and you **Cannot** stop in between]]
-		- [[#7.2 What is WinApps?#Most of the work takes only 15 minutes, but you will need to keep the computer on for the rest of the time for windows setup.|Most of the work takes only 15 minutes, but you will need to keep the computer on for the rest of the time for windows setup.]]
-- [[#8. WinApps Setup|8. WinApps Setup]]
-		- [[#7.2 What is WinApps?#Settings up WinApps|Settings up WinApps]]
-		- [[#7.2 What is WinApps?#Installing Docker|Installing Docker]]
-		- [[#7.2 What is WinApps?#Install Dependencies for WinApps|Install Dependencies for WinApps]]
-		- [[#7.2 What is WinApps?#WinApps Configuration|WinApps Configuration]]
-		- [[#7.2 What is WinApps?#Docker Configuration|Docker Configuration]]
-		- [[#7.2 What is WinApps?#File Configuration (compose.yaml)|File Configuration (compose.yaml)]]
-		- [[#7.2 What is WinApps?#Starting the Docker Engine|Starting the Docker Engine]]
-		- [[#7.2 What is WinApps?#Setting up  the Docker VM|Setting up  the Docker VM]]
-		- [[#7.2 What is WinApps?#Winapps Configuration Wizard.|Winapps Configuration Wizard.]]
-		- [[#7.2 What is WinApps?#Second Blue Menu|Second Blue Menu]]
-		- [[#7.2 What is WinApps?#Finishing Setup|Finishing Setup]]
-		- [[#7.2 What is WinApps?#Installing Applications|Installing Applications]]
-		- [[#7.2 What is WinApps?#Accessing Local Files|Accessing Local Files]]
-		- [[#7.2 What is WinApps?#Known Issues|Known Issues]]
+- [Info](#info)
+- [1. Package Manager](#1-package-manager)
+- [2. Desktop Environments](#2-desktop-environments)
+- [3. Kde Plasma](#3-kde-plasma)
+  - [3.1 Installation](#31-installation)
+  - [3.2 Display Managers](#32-display-managers)
+  - [3.3 Choosing the Display Manager](#33-choosing-the-display-manager)
+  - [3.4 Entering KDE Plasma](#34-entering-kde-plasma)
+  - [3.5 KDE Plasma (High DPI Issue)](#35-kde-plasma-high-dpi-issue)
+    - [3.5.0 High DPI Issue](#350-high-dpi-issue)
+- [4. Setting up Flathub](#4-setting-up-flathub)
+  - [4.1 What is Flathub?](#41-what-is-flathub)
+  - [4.2 How Flathub Works](#42-how-flathub-works)
+  - [4.3 Installing Flatpak (The engine)](#43-installing-flatpak-the-engine)
+  - [4.4 Installing Flathub (The repo)](#44-installing-flathub-the-repo)
+    - [4.4.1 Breaking Down the Command](#441-breaking-down-the-command)
+- [5. Installing Google Chrome](#5-installing-google-chrome)
+  - [5.1 Open Source vs. Closed Source](#51-open-source-vs-closed-source)
+  - [5.2 Installing Chrome](#52-installing-chrome)
+- [6 Keeping Your System Updated](#6-keeping-your-system-updated)
+  - [6.1 Updating Open Source Applications](#61-updating-open-source-applications)
+  - [6.2 Updating Closed Source Applications](#62-updating-closed-source-applications)
+  - [6.3 Updating Frequency](#63-updating-frequency)
+- [7. Microsoft Applications](#7-microsoft-applications)
+  - [7.1 How it Works](#71-how-it-works)
+  - [7.2 What is WinApps?](#72-what-is-winapps)
+- [8. WinApps Setup](#8-winapps-setup)
+  - [Settings up WinApps](#settings up-winapps)
+  - [Installing Docker](#installing-docker)
+  - [Install Dependencies for WinApps](#install-dependencies-for-winapps)
+  - [WinApps Configuration](#winapps-configuration)
+  - [Docker Configuration](#docker-configuration)
+  - [File Configuration (compose.yaml)](#file-configuration-composeyaml)
+  - [Starting the Docker Engine](#starting the-docker-engine)
+  - [Setting up the Docker VM](#setting-up-the-docker-vm)
+  - [Winapps Configuration Wizard](#winapps-configuration-wizard)
+  - [Second Blue Menu](#second-blue-menu)
+  - [Finishing Setup](#finishing-setup)
+  - [Installing Applications](#installing-applications)
+  - [Accessing Local Files](#accessing-local-files)
+  - [Known Issues](#known-issues)
+
 ## Info
 - Install ubuntu 24.04 normally, nothing special just normal, then reboot into it.
 ## 1. Package Manager
