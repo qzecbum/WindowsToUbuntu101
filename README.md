@@ -1,8 +1,51 @@
-# Full guide to switch from Windows to Ubuntu in a Day
+# *Full guide* to switch from **Windows** to **Ubuntu** in a Day
 
+## Table of Contents
+- [[#Info|Info]]
+- [[#1. Package Manager|1. Package Manager]]
+- [[#2. Desktop Environments|2. Desktop Environments]]
+- [[#3. Kde Plasma|3. Kde Plasma]]
+	- [[#3. Kde Plasma#3.1 Installation|3.1 Installation]]
+	- [[#3. Kde Plasma#3.2 Display Managers|3.2 Display Managers]]
+	- [[#3. Kde Plasma#3.3 Choosing the Display Manager|3.3 Choosing the Display Manager]]
+	- [[#3. Kde Plasma#3.4 Entering KDE Plasma|3.4 Entering KDE Plasma]]
+	- [[#3. Kde Plasma#3.5 KDE Plasma (High DPI Issue)|3.5 KDE Plasma (High DPI Issue)]]
+		- [[#3.5 KDE Plasma (High DPI Issue)#3.5.0 High DPI Issue|3.5.0 High DPI Issue]]
+- [[#4. Setting up Flathub|4. Setting up Flathub]]
+	- [[#4. Setting up Flathub#4.1 What is Flathub?|4.1 What is Flathub?]]
+	- [[#4. Setting up Flathub#4.2 How Flathub Works|4.2 How Flathub Works]]
+	- [[#4. Setting up Flathub#4.3 Installing Flatpak (The engine)|4.3 Installing Flatpak (The engine)]]
+	- [[#4. Setting up Flathub#4.4 Installing Flathub (The repo)|4.4 Installing Flathub (The repo)]]
+		- [[#4.4 Installing Flathub (The repo)#4.4.1 Breaking Down the Command|4.4.1 Breaking Down the Command]]
+- [[#5. Installing Google Chrome|5. Installing Google Chrome]]
+	- [[#5. Installing Google Chrome#5.1 Open Source vs. Closed Source|5.1 Open Source vs. Closed Source]]
+	- [[#5. Installing Google Chrome#5.2 Installing Chrome|5.2 Installing Chrome]]
+- [[#6 Keeping Your System Updated|6 Keeping Your System Updated]]
+	- [[#6 Keeping Your System Updated#6.1 Updating Open Source Applications|6.1 Updating Open Source Applications]]
+	- [[#6 Keeping Your System Updated#6.2 Updating Closed Source Applications|6.2 Updating Closed Source Applications]]
+	- [[#6 Keeping Your System Updated#6.3 Updating Frequency|6.3 Updating Frequency]]
+- [[#7. Microsoft Applications|7. Microsoft Applications]]
+	- [[#7. Microsoft Applications#7.1 How it Works|7.1 How it Works]]
+	- [[#7. Microsoft Applications#7.2 What is WinApps?|7.2 What is WinApps?]]
+		- [[#7.2 What is WinApps?#Everything after this is **optional**, This can take up to **1 Hour** depending on your hardware, and you **Cannot** stop in between|Everything after this is **optional**, This can take up to **1 Hour** depending on your hardware, and you **Cannot** stop in between]]
+		- [[#7.2 What is WinApps?#Most of the work takes only 15 minutes, but you will need to keep the computer on for the rest of the time for windows setup.|Most of the work takes only 15 minutes, but you will need to keep the computer on for the rest of the time for windows setup.]]
+- [[#8. WinApps Setup|8. WinApps Setup]]
+		- [[#7.2 What is WinApps?#Settings up WinApps|Settings up WinApps]]
+		- [[#7.2 What is WinApps?#Installing Docker|Installing Docker]]
+		- [[#7.2 What is WinApps?#Install Dependencies for WinApps|Install Dependencies for WinApps]]
+		- [[#7.2 What is WinApps?#WinApps Configuration|WinApps Configuration]]
+		- [[#7.2 What is WinApps?#Docker Configuration|Docker Configuration]]
+		- [[#7.2 What is WinApps?#File Configuration (compose.yaml)|File Configuration (compose.yaml)]]
+		- [[#7.2 What is WinApps?#Starting the Docker Engine|Starting the Docker Engine]]
+		- [[#7.2 What is WinApps?#Setting up  the Docker VM|Setting up  the Docker VM]]
+		- [[#7.2 What is WinApps?#Winapps Configuration Wizard.|Winapps Configuration Wizard.]]
+		- [[#7.2 What is WinApps?#Second Blue Menu|Second Blue Menu]]
+		- [[#7.2 What is WinApps?#Finishing Setup|Finishing Setup]]
+		- [[#7.2 What is WinApps?#Installing Applications|Installing Applications]]
+		- [[#7.2 What is WinApps?#Accessing Local Files|Accessing Local Files]]
+		- [[#7.2 What is WinApps?#Known Issues|Known Issues]]
 ## Info
 - Install ubuntu 24.04 normally, nothing special just normal, then reboot into it.
-
 ## 1. Package Manager
 *In this section we will talk about using the APT package manager*
 
