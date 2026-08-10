@@ -173,6 +173,7 @@
 - But before you save, press ``ctrl + f`` and search for ``AUTOPAUSE`` (line 123) and change it to ``on``.
 - And also find ``RDP_TIMEOUT`` (line 159) and change it to 60
 - Then press ``ctrl + s`` and close the window.
+
 #### Docker Configuration
 - Go back to the GitHub and scroll all the way up where you see the files and folders
 - find the file names ``compose.yaml`` and select it.
@@ -202,9 +203,8 @@
 #### Setting up  the Docker VM
 - **After some time** open a browser and go to ``127.0.0.1:8006`` and verify that your **windows desktop is visible**, once it is **you can close the tab**.
 - After closing the tab, wait **1 minute** for the connection to close.
-- Then, open your terminal and press the ``d`` key to detach and use your terminal again.
+- Then, open your terminal and press the ``new tab``  button in the top right corner of the terminal to use terminal again.
 - Go back to the WinApps github page, use ``ctrl + f`` to search for ``Step 5``.
-- 
 
 #### Winapps Configuration Wizard.
 - In the window use arrow keys and the enter key to interact
